@@ -6,33 +6,33 @@
 + **2019年度**
 ---
 
-20190306_01.md  [Oracle PPAS 兼容性分析 之 BITAND 函数](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190306/20190306_01.md)
+20190306_01.md  [《Oracle PPAS 兼容性分析 之 BITAND 函数》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190306/20190306_01.md)
 
-20190228_01.md  [Oracle PPAS 兼容性分析 之 聚合函数（PARALLEL_ENABLE AGGREGATE）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190228/20190228_01.md)
+20190228_01.md  [《Oracle PPAS 兼容性分析 之 聚合函数（PARALLEL_ENABLE AGGREGATE）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190228/20190228_01.md)
 
-20190227_03.md  [Oracle PPAS 兼容性分析 之 DBMS_UTILITY包（如：FORMAT_ERROR_STACK 函数）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_03.md)
+20190227_03.md  [《Oracle PPAS 兼容性分析 之 DBMS_UTILITY包（如：FORMAT_ERROR_STACK 函数）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_03.md)
 
-20190227_02.md  [Oracle PPAS 兼容性分析 之 DBMS_APPLICATION_INFO包（如：READ_CLIENT_INFO 方法）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_02.md)
+20190227_02.md  [《Oracle PPAS 兼容性分析 之 DBMS_APPLICATION_INFO包（如：READ_CLIENT_INFO 方法）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_02.md)
 
-20190227_01.md  [Oracle PPAS 兼容性分析 之 VARRAY 二维集合类型（PL/SQL）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_01.md)
+20190227_01.md  [《Oracle PPAS 兼容性分析 之 VARRAY 二维集合类型（PL/SQL）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190227/20190227_01.md)
 
-20190226_03.md  [Oracle PPAS 兼容性分析 之 CHR(0) 用法](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_03.md)
+20190226_03.md  [《Oracle PPAS 兼容性分析 之 CHR(0) 用法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_03.md)
 
-20190226_02.md  [Oracle PPAS 兼容性分析 之 FORALL STATEMENT](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_02.md)
+20190226_02.md  [《Oracle PPAS 兼容性分析 之 FORALL STATEMENT》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_02.md)
  
-20190226_01.md  [Oracle PPAS 兼容性分析 之 伪列（ROWID）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_01.md)
+20190226_01.md  [《Oracle PPAS 兼容性分析 之 伪列（ROWID）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190226/20190226_01.md)
 
-20190225_03.md  [Oracle PPAS 兼容性分析 之 TRIGGER ENABLE/DISABLE（触发器启用/禁用）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_03.md)
+20190225_03.md  [《Oracle PPAS 兼容性分析 之 TRIGGER ENABLE/DISABLE（触发器启用/禁用）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_03.md)
 
-20190225_02.md  [Oracle PPAS 兼容性分析 之 REGEXP_LIKE 正则匹配函数](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_02.md)
+20190225_02.md  [《Oracle PPAS 兼容性分析 之 REGEXP_LIKE 正则匹配函数》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_02.md)
 
-20190225_01.md  [Oracle PPAS 兼容性分析 之 AT TIME ZONE DBTIMEZONE 用法](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_01.md)
+20190225_01.md  [《Oracle PPAS 兼容性分析 之 AT TIME ZONE DBTIMEZONE 用法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190225/20190225_01.md)
 
-20190223_02.md  [Oracle PPAS 兼容性分析 之 SYS_CONTEXT 用法](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190223/20190223_02.md)
+20190223_02.md  [《Oracle PPAS 兼容性分析 之 SYS_CONTEXT 用法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190223/20190223_02.md)
 
-20190223_01.md  [Oracle PPAS 兼容性分析 之 间隔分区（Interval Partitioning）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190223/20190223_01.md)
+20190223_01.md  [《Oracle PPAS 兼容性分析 之 间隔分区（Interval Partitioning）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190223/20190223_01.md)
 
-20190222.md     [Oracle PPAS 兼容性分析 之 系统列（oid、tableoid、xmin、cmin、xmax、xmax、ctid）](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190222/20190222.md)
+20190222.md     [《Oracle PPAS 兼容性分析 之 系统列（oid、tableoid、xmin、cmin、xmax、xmax、ctid）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190222/20190222.md)
 
 ---
 + **2018年度**

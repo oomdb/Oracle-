@@ -1,12 +1,12 @@
 ### 迁移Oracle到ppas（EDB_Postgres_Advanced_Server）的兼容性分析
 目前仅支持ppas9.6,ppas10 版本，后续会支持ppas11
+---
 
---
 **文章汇总：**
-
+---
 + 2019年度
 
---
+---
 + **2018年度**
 
 20181122_01.md  [《Oracle PPAS 兼容性分析 之 管道函数（Pipelined Table Function）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20181122/20181122_01.md)

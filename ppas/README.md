@@ -5,6 +5,7 @@
 
 + **2019年度**
 ---
+20190314_01.md  [《Oracle PPAS 兼容性分析 之 分区全局索引（GLOBAL INDEX）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190314/20190314_01.md)
 
 20190306_01.md  [《Oracle PPAS 兼容性分析 之 BITAND 函数》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190306/20190306_01.md)
 

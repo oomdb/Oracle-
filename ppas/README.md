@@ -5,6 +5,8 @@
 
 + **2019年度**
 ---
+20190317_03.md [《Oracle PPAS 兼容性分析 之 UPDAET (subquery) SET 语法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_03.md)
+
 20190317_02.md [《Oracle PPAS 兼容性分析 之 PL/SQL事务：ROLLBACK TO SAVEPOINT》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_02.md)
 
 20190317_01.md [《Oracle PPAS 兼容性分析 之 Hierarchical Queries 层次查询《1》：CONNECT BY ROWNUM - Row Generator Techniques》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_01.md)

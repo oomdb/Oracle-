@@ -5,7 +5,7 @@
 
 + **2019年度**
 ---
-
+20190322_01.md [TABLE列数据类型是UDT：集合类型（Collection Types）Varrays](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190322/20190322_01.md)
 
 20190320_01.md [《隐式数据类型转换》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190320/20190320_01.md)
 

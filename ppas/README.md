@@ -5,6 +5,12 @@
 
 + **2019年度**
 ---
+
+
+20190320_01.md [《隐式数据类型转换》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190320/20190320_01.md)
+
+20190317_05.md [《TRIGGER：RETURN; 语法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_05.md)
+
 20190317_04.md [《Oracle PPAS 兼容性分析 之 TRIGGER：DELETE & WHEN(new)》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_04.md)
 
 20190317_03.md [《Oracle PPAS 兼容性分析 之 UPDAET (subquery) SET 语法》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190317/20190317_03.md)

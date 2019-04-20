@@ -2,4 +2,5 @@
 
 
 #### 一、学习资料
++ [MySQL8.0 - 官方文档](https://dev.mysql.com/doc/refman/8.0/en/)
 + [淘宝-数据库内核月报](http://mysql.taobao.org/monthly/)

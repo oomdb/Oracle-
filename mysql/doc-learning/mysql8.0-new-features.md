@@ -5,3 +5,16 @@
 + Features Removed in MySQL 8.0
 
 ---
+#### 一、Features Added
+
+
+
+
+---
+#### 二、Features Deprecated
+
+
+
+
+---
+#### 三、Features Removed

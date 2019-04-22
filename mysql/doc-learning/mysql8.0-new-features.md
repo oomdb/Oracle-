@@ -6,7 +6,8 @@
 
 ---
 #### 一、Features Added
-
++ [Data dictionary](https://dev.mysql.com/doc/refman/8.0/en/data-dictionary.html)
++ 
 
 
 

@@ -14,7 +14,7 @@
   + [caching_sha2_password 认证插件](https://dev.mysql.com/doc/refman/8.0/en/caching-sha2-pluggable-authentication.html)：SHA-256算法实现，与sha256_password插件一样。比mysql_native_password插件更安全。caching_sha2_password是默认的认证插件。
   + [支持角色Roles](https://dev.mysql.com/doc/refman/8.0/en/roles.html) 
   + [包含用户账户类别](https://dev.mysql.com/doc/refman/8.0/en/account-categories.html)：通过 SYSTEM_USER 权限区分 系统用户 和 普通用户。
-  + [授予全局权限](https://dev.mysql.com/doc/refman/8.0/en/partial-revokes.html):受需要变量 partial_revokes 控制。
+  + [授予全局权限](https://dev.mysql.com/doc/refman/8.0/en/partial-revokes.html):受系统变量 partial_revokes 控制。
   + GRANT ...  AS user [WITH ROLE]。
   + [密码管理策略](https://dev.mysql.com/doc/refman/8.0/en/password-management.html)
   + [支持FIPS模式](https://dev.mysql.com/doc/refman/8.0/en/fips-mode.html)
@@ -41,15 +41,14 @@
 + [Regular expression support](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)：支持 REGEXP_LIKE()/REGEXP/RLIKE、REGEXP_INSTR()、 REGEXP_REPLACE()、 REGEXP_SUBSTR()函数， 系统变量 regexp_stack_limit 和 regexp_time_limit 控制资源消耗。
 + Internal temporary tables：TempTable替换MEMORY，作为默认内部内存临时表存储引擎。受系统变量internal_tmp_mem_storage_engine 和 temptable_max_ram 控制。
 + [Logging](https://dev.mysql.com/doc/refman/8.0/en/error-log.html)：受系统变量 log_error_services  控制。
-+ Backup lock：允许在线备份过程中执行DML操作。需要 BACKUP_ADMIN 权限，支持 LOCK INSTANCE FOR BACKUP 和 UNLOCK INSTANCE 语法。
-+ Replication
-+ Connection management
++ **Backup lock**：允许在线备份过程中执行DML操作。需要 BACKUP_ADMIN 权限，支持 LOCK INSTANCE FOR BACKUP 和 UNLOCK INSTANCE 语法。
++ [Replication](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-partial-updates)：使用compact二进制格式，支持JSON documents 的部分更新，受系统参数binlog_row_value_options = PARTIAL_JSON 控制。
++ [Connection management](https://dev.mysql.com/doc/refman/8.0/en/client-connections.html)：允许专门为管理连接 配置TCP/IP端口。
 + Configuration
   + 11
   + 11
-+ Plugins
-+ C API
-
++ **Plugins**：之前是C 或者 C++，目前只能是 C++。
++ [C API](https://dev.mysql.com/doc/refman/8.0/en/c-api-asynchronous-interface.html)：MySQL CAPI 现在支持异步函数，用于与MySQL服务器进行非阻塞通信。
 
 ---
 #### 二、Features Deprecated

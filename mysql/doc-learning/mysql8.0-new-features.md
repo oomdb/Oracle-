@@ -26,22 +26,22 @@
 + **InnoDB enhancements**
   + 11
   + 11
-+ Character set support
++ [Character set support](https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-sets.html)：默认字符集从 latin1 变为 utf8mb4，包含新的collations，如：utf8mb4_ja_0900_as_cs。
 + **JSON enhancements**
   + 11
   + 11
-+ Data type support
++ [Data type support](https://dev.mysql.com/doc/refman/8.0/en/data-type-defaults.html)： BLOB, TEXT, GEOMETRY, 和 JSON 数据类型,支持expressions作为默认值。
 + **Optimizer**
   + 11
   + 11
-+ Common table expressions
-+ Window functions
-+ Lateral derived tables
-+ Aliases in single-table DELETE statements
-+ Regular expression support
-+ Internal temporary tables
-+ Logging
-+ Backup lock
++ [Common table expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html)：CTE 支持 nonrecursive 和 recursive 两种类修改。
++ [Window functions](https://dev.mysql.com/doc/refman/8.0/en/window-functions.html)
++ [Lateral derived tables](https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html)
++ **Aliases in single-table DELETE statements**：MySQL 8.0.16+版本开始支持
++ [Regular expression support](https://dev.mysql.com/doc/refman/8.0/en/regexp.html)：支持 REGEXP_LIKE()/REGEXP/RLIKE、REGEXP_INSTR()、 REGEXP_REPLACE()、 REGEXP_SUBSTR()函数， 系统变量 regexp_stack_limit 和 regexp_time_limit 控制资源消耗。
++ Internal temporary tables：TempTable替换MEMORY，作为默认内部内存临时表存储引擎。受系统变量internal_tmp_mem_storage_engine 和 temptable_max_ram 控制。
++ [Logging](https://dev.mysql.com/doc/refman/8.0/en/error-log.html)：受系统变量 log_error_services  控制。
++ Backup lock：允许在线备份过程中执行DML操作。需要 BACKUP_ADMIN 权限，支持 LOCK INSTANCE FOR BACKUP 和 UNLOCK INSTANCE 语法。
 + Replication
 + Connection management
 + Configuration

@@ -24,16 +24,16 @@
 + [Resource management](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html)
 + [Table encryption management](https://dev.mysql.com/doc/refman/8.0/en/innodb-tablespace-encryption.html#innodb-schema-tablespace-encryption-default)：受 default_table_encryption 和 table_encryption_privilege_check 系统变量控制，有 TABLE_ENCRYPTION_ADMIN 权限。
 + **InnoDB enhancements**
-  +
-  +
+  + 11
+  + 11
 + Character set support
 + **JSON enhancements**
-  +
-  + 
+  + 11
+  + 11
 + Data type support
 + **Optimizer**
-  + 
-  + 
+  + 11
+  + 11
 + Common table expressions
 + Window functions
 + Lateral derived tables
@@ -45,8 +45,8 @@
 + Replication
 + Connection management
 + Configuration
-  +
-  + 
+  + 11
+  + 11
 + Plugins
 + C API
 

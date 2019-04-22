@@ -6,9 +6,10 @@
 
 ---
 #### 一、Features Added
-+ [Data dictionary](https://dev.mysql.com/doc/refman/8.0/en/data-dictionary.html)
-+ 
-
++ [MySQL Data dictionary](https://dev.mysql.com/doc/refman/8.0/en/data-dictionary.html)
++ [Atomic data definition statements (Atomic DDL)](https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html)
++ [Upgrade procedure](https://dev.mysql.com/doc/refman/8.0/en/upgrading-what-is-upgraded.html)：MySQL 8.0.16版本开始，安装新版本数据库，在下次启动时，自动调用mysql_upgrade执行升级任务。
++ Security and account management
 
 
 ---

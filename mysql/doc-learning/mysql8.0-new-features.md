@@ -44,9 +44,7 @@
 + **Backup lock**：允许在线备份过程中执行DML操作。需要 BACKUP_ADMIN 权限，支持 LOCK INSTANCE FOR BACKUP 和 UNLOCK INSTANCE 语法。
 + [Replication](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-partial-updates)：使用compact二进制格式，支持JSON documents 的部分更新，受系统参数binlog_row_value_options = PARTIAL_JSON 控制。
 + [Connection management](https://dev.mysql.com/doc/refman/8.0/en/client-connections.html)：允许专门为管理连接 配置TCP/IP端口。
-+ Configuration
-  + 11
-  + 11
++ **Configuration**：整个MySQL中主机名的最大允许长度已从以前的60个字符提高到255个ASCII字符。主要分布在 mysql system schema, Performance Schema, INFORMATION_SCHEMA, 和 sys schema;CHANGE MASTER TO 的 MASTER_HOST值；SHOW PROCESSLIST 输出的 host 列；账户名中的host名称；主机相关的命令选型和系统变量。
 + **Plugins**：之前是C 或者 C++，目前只能是 C++。
 + [C API](https://dev.mysql.com/doc/refman/8.0/en/c-api-asynchronous-interface.html)：MySQL CAPI 现在支持异步函数，用于与MySQL服务器进行非阻塞通信。
 

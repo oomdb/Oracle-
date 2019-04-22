@@ -21,9 +21,34 @@
   + [运行时重配新连接的 SSL context](https://dev.mysql.com/doc/refman/8.0/en/using-encrypted-connections.html#using-encrypted-connections-server-side-runtime-configuration)
   + [OpenSSL 1.1.1支持TLS v1.3加密协议](https://dev.mysql.com/doc/refman/8.0/en/encrypted-connection-protocols-ciphers.html)
   + MySQL现在将授予命名管道上的客户端的访问控制设置为Windows上成功通信所必需的最小值：受 named_pipe_full_access_group 系统变量控制。
-+ Resource management
-+ Table encryption management
-+ InnoDB enhancements
++ [Resource management](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html)
++ [Table encryption management](https://dev.mysql.com/doc/refman/8.0/en/innodb-tablespace-encryption.html#innodb-schema-tablespace-encryption-default)：受 default_table_encryption 和 table_encryption_privilege_check 系统变量控制，有 TABLE_ENCRYPTION_ADMIN 权限。
++ **InnoDB enhancements**
+  +
+  +
++ Character set support
++ **JSON enhancements**
+  +
+  + 
++ Data type support
++ **Optimizer**
+  + 
+  + 
++ Common table expressions
++ Window functions
++ Lateral derived tables
++ Aliases in single-table DELETE statements
++ Regular expression support
++ Internal temporary tables
++ Logging
++ Backup lock
++ Replication
++ Connection management
++ Configuration
+  +
+  + 
++ Plugins
++ C API
 
 
 ---

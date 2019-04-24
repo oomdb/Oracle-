@@ -32,8 +32,12 @@
   + 11
 + [Data type support](https://dev.mysql.com/doc/refman/8.0/en/data-type-defaults.html)： BLOB, TEXT, GEOMETRY, 和 JSON 数据类型,支持expressions作为默认值。
 + **Optimizer**
-  + 11
-  + 11
+  + [支持不可见索引（invisible indexes）](https://dev.mysql.com/doc/refman/8.0/en/invisible-indexes.html)
+  + [支持降序索引（descending indexes）](https://dev.mysql.com/doc/refman/8.0/en/descending-indexes.html)
+  + [支持表达式索引（Functional key parts）](https://dev.mysql.com/doc/refman/8.0/en/create-index.html)
+  + [MySQL 8.0.14+ 版本，在准备阶段删除where条件中的常量表达式，而不是等到优化阶段](https://dev.mysql.com/doc/refman/8.0/en/outer-join-optimization.html)
+  + [MySQL 8.0.16+ 版本，支持 Constant-Folding Optimization ](https://dev.mysql.com/doc/refman/8.0/en/constant-folding-optimization.html)
+  + [MySQL 8.0.16+ 版本，半连接优化，IN 子查询可以转换为 EXISTS 子查询](https://dev.mysql.com/doc/refman/8.0/en/semi-joins.html)
 + [Common table expressions](https://dev.mysql.com/doc/refman/8.0/en/with.html)：CTE 支持 nonrecursive 和 recursive 两种类修改。
 + [Window functions](https://dev.mysql.com/doc/refman/8.0/en/window-functions.html)
 + [Lateral derived tables](https://dev.mysql.com/doc/refman/8.0/en/lateral-derived-tables.html)

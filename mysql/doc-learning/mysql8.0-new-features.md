@@ -24,8 +24,42 @@
 + [Resource management](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html)
 + [Table encryption management](https://dev.mysql.com/doc/refman/8.0/en/innodb-tablespace-encryption.html#innodb-schema-tablespace-encryption-default)：受 default_table_encryption 和 table_encryption_privilege_check 系统变量控制，有 TABLE_ENCRYPTION_ADMIN 权限。
 + **InnoDB enhancements**
-  + 11
-  + 11
+  + 最大 auto-increment 值持久化(MySQL服务重启)
+  + 记录索引树冲突记录到redo log，保证 crash safe
+  + [memcached 插件支持多get操作和range 查询](https://dev.mysql.com/doc/refman/8.0/en/innodb-memcached-multiple-get-range-query.html)
+  + 支持死锁检测参数 innodb_deadlock_detect 动态调整
+  + 新增INFORMATION_SCHEMA.INNODB_CACHED_INDEXES表，报告每个索引在InnoDB缓冲池中缓存的索引页数innodb_rollback_segments 系统参数定义每个undo表空间回滚段的数量，之前是整个MySQL实例
+  + InnoDB 临时表创建在ibtmp1共享临时表空间中
+  + InnoDB 表空间加密特性，支持：redo log 和 undo log 数据加密
+  + [SELECT ... FOR SHARE 和 SELECT ... FOR UPDATE 语句支持 NOWAIT 和 SKIP LOCKED 选项](https://dev.mysql.com/doc/refman/8.0/en/innodb-locking-reads.html#innodb-locking-reads-nowait-skip-locked)
+  + 支持 ALTER TABLE [ADD|DROP|COALESCE|REORGANIZE|REBUILD] PARTITION，使用 ALGORITHM={COPY|INPLACE} 和 LOCK 语句。
+  + [InnoDB使用MySQL data dictionary存储引擎相关的数据字典信息](https://dev.mysql.com/doc/refman/8.0/en/data-dictionary.html)
+  + mysql系统表和数据字典表开始存储在mysql.ibd独立表空间中，之前是存放在mysql数据库目录个人InnoDB表空间文件中
+  + 独立undo表空间，MySQL 8.0.14+开始，支持undo表空间的CREATE/DROP/ALTER 在线操作
+  + innodb_undo_log_truncate 系统参数默认开启
+  + innodb_rollback_segments 系统参数定义每个undo表空间回滚段的数量，之前是整个MySQL实例回滚段的数量
+  + innodb_max_dirty_pages_pct_lwm 默认值从 0 变为 10，innodb_max_dirty_pages_pct 默认值从 75 变为 90
+  + [innodb_autoinc_lock_mode 系统参数默认值为 2](https://dev.mysql.com/doc/refman/8.0/en/innodb-auto-increment-handling.html#innodb-auto-increment-lock-modes)
+  + 支持重命名通用表空间，ALTER TABLESPACE ... RENAME TO 
+  + [新增innodb_dedicated_server系统参数，默认关闭，自动配置 innodb_buffer_pool_size/innodb_log_file_size/innodb_flush_method 3个参数值](https://dev.mysql.com/doc/refman/8.0/en/innodb-dedicated-server.html)
+  + 新增 INFORMATION_SCHEMA.INNODB_TABLESPACES_BRIEF 表空间视图
+  + 内置压缩库 zlib library 版本从 1.2.3 变为 1.2.11
+  + 序列化字典信息（SDI）存在于除temp表空间和undo表空间文件之外的所有InnoDB表空间文件中
+  + [支持 原子DDL](https://dev.mysql.com/doc/refman/8.0/en/atomic-ddl.html)
+  + [MySQL服务停止时，可以通过innodb_directories选项move表空间文件到新位置](https://dev.mysql.com/doc/refman/8.0/en/innodb-moving-data-files-offline.html)
+  + [redo log 优化](https://dev.mysql.com/doc/refman/8.0/en/optimizing-innodb-logging.html)：新增 innodb_log_wait_for_flush_spin_hwm/innodb_log_spin_cpu_abs_lwm/innodb_log_spin_cpu_pct_hwm 3个参数 以及 innodb_log_buffer_size 系统参数可在线动态调整
+  + MySQL 8.0.12+版本，undo支持对lob对象的细微更新（100 bytes 以内 ）
+  + [在线DDL操作](https://dev.mysql.com/doc/refman/8.0/en/innodb-online-ddl-operations.html)MySQL 8.0.12+版本，ALTER TABLE 操作支持 ALGORITHM=INSTANT，如：添加列/添加、删除虚拟列/添加、删除列默认值/修改ENUM 或者 SET 列的定义/修改索引类型/重命名表。
+  + MySQL 8.0.13+版本，TempTable存储引擎支持存储BLOB类型列。之前存储在 internal_tmp_disk_storage_engine 系统变量中。
+  + MySQL 8.0.13+版本，InnoDB 静态数据（data-at-rest）加密特性支持general表空间。之前只支持独立表空间。
+  + 禁用 innodb_buffer_pool_in_core_file 系统变量，使用此变量，core_file 变量必须开启 & OS必须支持 madvise()。
+  + MySQL 8.0.13+版本，用户临时表和内部临时表存储在session会话临时表空间，之前存错在global临时表空间（ibtmp1）。innodb_temp_tablespaces_dir 和 INNODB_SESSION_TEMP_TABLESPACES 表，ibtmp1存储用户创建临时表空间的回滚段信息。
+  + MySQL 8.0.14+版本，InnoDB 支持并发聚焦索引扫描，不支持二级索引。innodb_parallel_read_threads 参数设置大于1。默认是 4。
+  + MySQL 8.0.14+版本，启用 innodb_dedicated_server  系统参数。
+  + MySQL 8.0.14+版本，CREATE TABLESPACE语句的 ADD DATAFILE 字句是可选的，且不需要FILE权限。
+  + [MySQL 8.0.16+版本，temptable_use_mmap 和 temptable_max_ram 系统变量](https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html#internal-temporary-tables-engines)
+  + [MySQL 8.0.16+版本，InnoDB 静态数据（data-at-rest）加密特性支持mysql系统表空间](https://dev.mysql.com/doc/refman/8.0/en/innodb-tablespace-encryption.html)
+  + [MySQL 8.0.16+版本，新增 innodb_spin_wait_pause_multiplier 系统参数](https://dev.mysql.com/doc/refman/8.0/en/innodb-performance-spin_lock_polling.html)
 + [Character set support](https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-sets.html)：默认字符集从 latin1 变为 utf8mb4，包含新的collations，如：utf8mb4_ja_0900_as_cs。
 + **JSON enhancements**
   + 11

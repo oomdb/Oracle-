@@ -62,9 +62,9 @@
   + [MySQL 8.0.16+版本，新增 innodb_spin_wait_pause_multiplier 系统参数](https://dev.mysql.com/doc/refman/8.0/en/innodb-performance-spin_lock_polling.html)
 + [Character set support](https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-sets.html)：默认字符集从 latin1 变为 utf8mb4，包含新的collations，如：utf8mb4_ja_0900_as_cs。
 + **JSON enhancements**
-  + 1
-  + 
-  + 
+  + 增加 ->> 操作符，等价于 JSON_UNQUOTE(JSON_EXTRACT()) ，如：col->>"$.path" = JSON_UNQUOTE(col->"$.path")
+  + 增加JSON聚合函数：JSON_ARRAYAGG() / JSON_OBJECTAGG()
+  + 增加JSON实用函数：JSON_PRETTY() 
   +
   +
   +

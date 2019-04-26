@@ -62,8 +62,16 @@
   + [MySQL 8.0.16+版本，新增 innodb_spin_wait_pause_multiplier 系统参数](https://dev.mysql.com/doc/refman/8.0/en/innodb-performance-spin_lock_polling.html)
 + [Character set support](https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-sets.html)：默认字符集从 latin1 变为 utf8mb4，包含新的collations，如：utf8mb4_ja_0900_as_cs。
 + **JSON enhancements**
-  + 11
-  + 11
+  + 1
+  + 
+  + 
+  +
+  +
+  +
+  +
+  +
+  +
+  +
 + [Data type support](https://dev.mysql.com/doc/refman/8.0/en/data-type-defaults.html)： BLOB, TEXT, GEOMETRY, 和 JSON 数据类型,支持expressions作为默认值。
 + **Optimizer**
   + [支持不可见索引（invisible indexes）](https://dev.mysql.com/doc/refman/8.0/en/invisible-indexes.html)

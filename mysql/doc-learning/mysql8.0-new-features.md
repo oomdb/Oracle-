@@ -100,7 +100,16 @@
 + sha256_password密码认证弃用，建议使用超集caching_sha2_password替换
 + [validate_password插件弃用，可以通过安装组件调用](https://dev.mysql.com/doc/refman/8.0/en/validate-password-transitioning.html)
 + ALTER TABLESPACE 和 DROP TABLESPACE ENGINE 弃用
-
++ SQL MODE值 PAD_CHAR_TO_FULL_LENGTH 弃用
++ FLOAT 和 DOUBLE列 AUTO_INCREMENT 弃用
++ FLOAT(M,D) 和 DOUBLE(M,D) 指定位数语法弃用
++ 非标准操作符 &&, ||（除非SQL MODE值PIPES_AS_CONCAT指定）, 和 ! 弃用，使用AND, OR, 和 NOT 替换
++ JSON合并函数JSON_MERGE()弃用，使用JSON_MERGE_PRESERVE() 替换
++ SQL_CALC_FOUND_ROWS查询修饰符 和 FOUND_ROWS() 函数弃用
++ MySQL 8.0.13+ 版本，CREATE TEMPORARY TABLE 字句 TABLESPACE = innodb_file_per_table 和 TABLESPACE = innodb_temporary 弃用
++ [mysql_upgrade客户端程序弃用](https://dev.mysql.com/doc/refman/8.0/en/upgrading-what-is-upgraded.html)
++ server选项--no-dd-upgrade 弃用，使用--upgrade 替换。
 
 ---
 #### 三、Features Removed
++ 111 

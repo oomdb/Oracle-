@@ -96,8 +96,10 @@
 
 ---
 #### 二、Features Deprecated
-
-
++ utf8mb3字符集弃用，建议使用utf8mb4字符集
++ sha256_password密码认证弃用，建议使用超集caching_sha2_password替换
++ [validate_password插件弃用，可以通过安装组件调用](https://dev.mysql.com/doc/refman/8.0/en/validate-password-transitioning.html)
++ ALTER TABLESPACE 和 DROP TABLESPACE ENGINE 弃用
 
 
 ---

@@ -65,11 +65,11 @@
   + 增加 ->> 操作符，等价于 JSON_UNQUOTE(JSON_EXTRACT()) ，如：col->>"$.path" = JSON_UNQUOTE(col->"$.path")
   + 增加JSON聚合函数：JSON_ARRAYAGG() / JSON_OBJECTAGG()
   + 增加JSON实用函数：JSON_PRETTY() 
-  +
-  +
-  +
-  +
-  +
+  + ORDER BY 排序JSON值，排序键是可变长度，而不是一部分固定的1K大小。
+  + [MySQL 8.0.2+版本开始，支持部分、就地更新JSON列的值。使用 JSON_SET()/JSON_REPLACE()/JSON_REMOVE() 方法，RBR必须设置binlog_row_value_options=PARTIAL_JSON参数值](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-partial-updates)
+  + [MySQL 8.0.2+版本开始，新增JSON实用函数，JSON_STORAGE_SIZE() 和 JSON_STORAGE_FREE()](https://dev.mysql.com/doc/refman/8.0/en/json-utility-functions.html)
+  + [MySQL 8.0.2+版本开始，XPath表达式支持范围，如：$[1 to 5]](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-paths)
+  + 
   +
   +
 + [Data type support](https://dev.mysql.com/doc/refman/8.0/en/data-type-defaults.html)： BLOB, TEXT, GEOMETRY, 和 JSON 数据类型,支持expressions作为默认值。

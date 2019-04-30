@@ -69,9 +69,9 @@
   + [MySQL 8.0.2+版本开始，支持部分、就地更新JSON列的值。使用 JSON_SET()/JSON_REPLACE()/JSON_REMOVE() 方法，RBR必须设置binlog_row_value_options=PARTIAL_JSON参数值](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-partial-updates)
   + [MySQL 8.0.2+版本开始，新增JSON实用函数，JSON_STORAGE_SIZE() 和 JSON_STORAGE_FREE()](https://dev.mysql.com/doc/refman/8.0/en/json-utility-functions.html)
   + [MySQL 8.0.2+版本开始，XPath表达式支持范围，如：$[1 to 5]](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-paths)
-  + 
-  +
-  +
+  + [添加符合 RFC 7396 的 JSON合并函数，如： JSON_MERGE_PATCH()，JSON_MERGE()函数重命名为JSON_MERGE_PRESERVE()](https://dev.mysql.com/doc/refman/8.0/en/json-modification-functions.html)
+  + [支持重复key，最后的重复key获取，和之前的版本不一样，是首个获胜](https://dev.mysql.com/doc/refman/8.0/en/json.html#json-normalization)
+  + [MySQL 8.0.4+版本开始，新增JSON_TABLE() 函数](https://dev.mysql.com/doc/refman/8.0/en/json-table-functions.html)
 + [Data type support](https://dev.mysql.com/doc/refman/8.0/en/data-type-defaults.html)： BLOB, TEXT, GEOMETRY, 和 JSON 数据类型,支持expressions作为默认值。
 + **Optimizer**
   + [支持不可见索引（invisible indexes）](https://dev.mysql.com/doc/refman/8.0/en/invisible-indexes.html)

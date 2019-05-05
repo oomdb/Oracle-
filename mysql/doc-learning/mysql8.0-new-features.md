@@ -112,4 +112,30 @@
 
 ---
 #### 三、Features Removed
-+ 111 
++ innodb_locks_unsafe_for_binlog 系统参数删除，使用 READ COMMITTED 事务隔离级别替换。
++ information_schema_stats 参数被 information_schema_stats_expiry 参数替代。
++ MySQL 8.0.3+，IS视图依赖InnoDB系统表被数据字典表中的内部系统视图所替代。受影响的InnoDB INFORMATION_SCHEMA 视图被重命名。
++ 账户管理特性
+    + 创建用户使用 CREATE USER 代替 GRANT 操作，同时 SQL Mode值 NO_AUTO_CREATE_USER 也被删除了。
+    + GRANT 修改账户属性 被替换为 ALTER USER 语法，如：权限认证、SSL、资源限制等。
+    + IDENTIFIED BY PASSWORD 'hash_string' 语法 被替换为 IDENTIFIED WITH auth_plugin AS 'hash_string'，因此 log_builtin_as_identified_by_password 系统参数也被删除了。
+    + PASSWORD()函数删除，同时 SET PASSWORD ... = PASSWORD('auth_string') 语法失效。
+    + old_passwords 系统变量删除。
++ 查询缓存QC
+	+ FLUSH QUERY CACHE 和 RESET QUERY CACHE 语句被删除。
+	+ query_cache_limit, query_cache_min_res_unit, query_cache_size, query_cache_type, query_cache_wlock_invalidate 系统变量被删除。
+	+ Qcache_free_blocks, Qcache_free_memory, Qcache_hits, Qcache_inserts, Qcache_lowmem_prunes, Qcache_not_cached, Qcache_queries_in_cache, Qcache_total_blocks 状态变量被删除。
+	+ checking privileges on cached query, checking query cache for query, invalidating query cache entries, sending cached result to client, storing result in query cache, Waiting for query cache lock 线程状态被删除。
+	+ SQL_CACHE SELECT 修饰符。
+	+ SQL_NO_CACHE SELECT 修饰符。
+	+ ndb_cache_check_time 系统变量 和 have_query_cache 系统变量。
++ --ignore-db-dir 选项 和 ignore_db_dirs 系统参数被删除。
++ 系统变量 tx_isolation 和 tx_read_only 被替换为 transaction_isolation 和 transaction_read_only。
++ 系统变量 sync_frm 被删除。
++ 系统变量 secure_auth 和 --secure-auth 客户端选项被删除，mysql_options() C API函数 MYSQL_SECURE_AUTH 被删除。
++ 系统变量 multi_range_count 被删除。
++ 系统变量 log_warnings 和 --log-warnings 服务器选项 被 log_error_verbosity 系统变量替代。
++ 系统变量 sql_log_bin 全局（global）被删除，会话（session）级别被保留。
++ 系统变量 metadata_locks_cache_size 和 metadata_locks_hash_instances 被删除。
++ 系统变量 date_format, datetime_format, time_format, and max_tmp_tables 被删除。
++ 111

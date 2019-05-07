@@ -39,3 +39,7 @@
 + **des-key-file:**：从给定文件加载des_encrypt() 和 des_encrypt 密钥，MySQL 8.0.3
 + **group_replication_allow_local_disjoint_gtids_join**：允许当前服务器加入该组，即使该组中没有事务，MySQL 8.0.4  
 + **have_crypt**：crypt() 系统调用的可用性，MySQL 8.0.3
++ **ignore-builtin-innodb**：忽略内置InnoDB，MySQL 8.0.3
++ **ignore-db-dir**：将目录视为非数据库目录，MySQL 8.0.0
++ **ignore_db_dirs**：目录被视为非数据库目录，MySQL 8.0.0 
+

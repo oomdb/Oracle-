@@ -138,4 +138,45 @@
 + 系统变量 sql_log_bin 全局（global）被删除，会话（session）级别被保留。
 + 系统变量 metadata_locks_cache_size 和 metadata_locks_hash_instances 被删除。
 + 系统变量 date_format, datetime_format, time_format, and max_tmp_tables 被删除。
-+ 111
++ 兼容的SQL modes被删除：DB2, MAXDB, MSSQL, MYSQL323, MYSQL40, ORACLE, POSTGRESQL, NO_FIELD_OPTIONS, NO_KEY_OPTIONS, NO_TABLE_OPTIONS。
++ GROUP BY 字句的 ASC 或者 DESC 限制符被删除。
++ EXPLAIN 语句的 EXTENDED 和 PARTITIONS 关键字被移除，因为默认启用。
++ 加密函数移除：ENCODE()、DECODE()、ENCRYPT()、DES_ENCRYPT() 和 DES_DECRYPT()，--des-key-file 选项，have_crypt 系统变量，FLUSH语句的DES_KEY_FILE选项，CMake选项HAVE_CRYPT。考虑使用函数 SHA2() / AES_ENCRYPT() / AES_DECRYPT() 代替 ENCRYPT() 函数。
++ MySQL 8.0，只留下相应的 ST_ 和 MBR 函数。
++ [GIS函数中 WKB字符串 或者 geometry参数，Geometry参数被删除](https://dev.mysql.com/doc/refman/8.0/en/gis-wkb-functions.html)
++ 解析器在SQL语句中不在把 \N 当做NULL的同义词，建议使用NULL代替。如：SELECT \N FROM DUAL; 结果是NULL。
++ 移除 PROCEDURE ANALYSE() 语法。
++ 客户端：--ssl 和 --ssl-verify-server-cert 选项被移除，使用 --ssl-mode=REQUIRED 代替 --ssl=1 或者 --enable-ssl；使用 --ssl-mode=DISABLED 代替 --ssl=0, --skip-ssl, 或者 --disable-ssl；使用 --ssl-mode=VERIFY_IDENTITY 代替 --ssl-verify-server-cert 。服务端的--ssl选项保持不变。
++ 服务端选项 --temp-pool 移除。
++ 服务端选项 --ignore-builtin-innodb 和 ignore_builtin_innodb 系统变量移除。
++ ALTER DATABASE 语句的UPGRADE DATA DIRECTORY NAME字句 和 Com_alter_db_upgrade 状态变量移除。
++ mysql_install_db 安装程序被移除，mysqld程序的--bootstrap选项被移除，CMake选项INSTALL_SCRIPTDIR被移除。使用mysqld程序带 --initialize 或者 --initialize-insecure 代替。
++ 通用分区处理程序已从MySQL服务器中删除，--partition 和 --skip-partition 选项被移除，SHOW PLUGINS 或者 INFORMATION_SCHEMA.PLUGINS 表不再显示分区相关的记录。目前只有InnoDB 和 NDB 存储引擎支持本地分区。非INNODB存储引擎分区表升级存在分歧。
++ INFORMATION_SCHEMA不再维护系统和状态变量信息。表GLOBAL_VARIABLES, SESSION_VARIABLES, GLOBAL_STATUS, SESSION_STATUS 删除，使用PS代替，show_compatibility_56系统变量移除；状态变量Slave_heartbeat_period, Slave_last_heartbeat, Slave_received_heartbeats, Slave_retried_transactions, Slave_running删除，使用PS代替。
++ Performance Schema 的setup_timers表删除，以及表performance_timers 中的TICK行。
++ libmysqld内置库移除。
+	+ mysql_options()选项 MYSQL_OPT_GUESS_CONNECTION, MYSQL_OPT_USE_EMBEDDED_CONNECTION, MYSQL_OPT_USE_REMOTE_CONNECTION, 和 MYSQL_SET_CLIENT_IP
+	+ mysql_config选项 --libmysqld-libs, --embedded-libs, 和 --embedded
+	+ CMake 选项 WITH_EMBEDDED_SERVER, WITH_EMBEDDED_SHARED_LIBRARY, 和 INSTALL_SECURE_FILE_PRIV_EMBEDDEDDIR
+	+ 未文档化的 mysql --server-arg 选项
+	+ mysqltest 选项 --embedded-server, --server-arg, 和 --server-file
+	+ mysqltest_embedded 和 mysql_client_test_embedded 测试程序
++ mysql_plugin 实用程序移除，替代方案：服务启动选项 --plugin-load 或者 --plugin-load-add ；运行时的INSTALL PLUGIN 语句。
++ resolveip 实用程序移除，使用 nslookup, host, 或者 dig 代替。
++ resolve_stack_dump 实用程序移除.
++ [服务端error codes被删除](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html#mysql-nutshell-removals)
++ INFORMATION_SCHEMA 库的 INNODB_LOCKS 和 INNODB_LOCK_WAITS 表移除，使用 Performance Schema 库的 data_locks 和 data_lock_waits 表代替。
++ InnoDB不再支持压缩临时表，innodb_strict_mode 启动时（默认启用）， CREATE TEMPORARY TABLE 带 ROW_FORMAT=COMPRESSED 或者 KEY_BLOCK_SIZE 将报错，如果 innodb_strict_mode禁用，非压缩临时表将被创建 并产生warnings。
++ 当创建表空间数据文件不在MySQL数据目录下时，InnoDB不再创建 .isl 文件。innodb_directories 选项支持表空间独立于数据文件目录之外。
++ InnoDB文件格式变量被移除：innodb_file_format、innodb_file_format_check、innodb_file_format_max、innodb_large_prefix ，之前时为了兼容MySQL 5.1之前版本保留的。同时 I_S库 INNODB_TABLES 和 INNODB_TABLESPACES 表中的FILE_FORMAT列被移除。
++ innodb_support_xa 系统变量移除，默认支持XA事务的2PC。
++ DTrace支持被删除。
++ JSON_APPEND()函数被移除，使用JSON_ARRAY_APPEND() 函数代替。
++ MySQL 8.0.13+版本，删除了在共享InnoDB表空间中放置表分区的支持，共享表空间包括InnoDB系统表空间和通用表空间。
++ 不支持在SET以外的语句中设置用户变量，MySQL 8.0.13+开始废弃，MySQL 9.0删除。
++ --ndb perror 选项被 ndb_perror 程序代替。
++ innodb_undo_logs 变量移除，使用innodb_rollback_segments 变量代替。
++ Innodb_available_undo_logs 状态变量移除，使用 SHOW VARIABLES LIKE 'innodb_rollback_segments'; 代替。
++ MySQL 8.0.14+版本， innodb_undo_tablespaces 参数不需要配置。
++ ALTER TABLE ... UPGRADE PARTITIONING 语句被删除。
++ [MySQL 8.0.16+版本，internal_tmp_disk_storage_engine 系统变量移除，磁盘内置临时表总是使用InnoDB 存储引擎](https://dev.mysql.com/doc/refman/8.0/en/internal-temporary-tables.html#internal-temporary-tables-engines-disk)

@@ -28,3 +28,14 @@
 + **Qcache_not_cached**：非缓存查询（QC）的数量（由于query_cache_type设置而无法缓存或未缓存），MySQL 8.0.3
 + **Qcache_queries_in_cache**：在查询缓存（QC）中注册的查询数，MySQL 8.0.3
 + **Qcache_total_blocks**：查询缓存（QC）中的块总数，MySQL 8.0.3
++ **Slave_heartbeat_period**：Slave库复制心跳间隔，单位：秒，MySQL 8.0.1
++ **Slave_last_heartbeat**：以TIMESTAMP格式显示收到最新心跳信号的时间，MySQL 8.0.1
++ **Slave_received_heartbeats**：自上次重置以来从Slave接收的心跳数，MySQL 8.0.1 
++ **Slave_retried_transactions**：自启动以来Slave端SQL线程已重试事务的总次数，MySQL 8.0.1 
++ **Slave_running**：Slave库 I/O thread 状态，MySQL 8.0.1 
++ **bootstrap**：mysql安装脚本使用，MySQL 8.0.0
++ **date_format:**：DATE格式 (未使用)，MySQL 8.0.3
++ **datetime_format**：DATETIME/TIMESTAMP格式(未使用)，MySQL 8.0.3
++ **des-key-file:**：从给定文件加载des_encrypt() 和 des_encrypt 密钥，MySQL 8.0.3
++ **group_replication_allow_local_disjoint_gtids_join**：允许当前服务器加入该组，即使该组中没有事务，MySQL 8.0.4  
++ **have_crypt**：crypt() 系统调用的可用性，MySQL 8.0.3

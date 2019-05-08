@@ -6,7 +6,15 @@
 
 ---
 #### 一、Options and Variables Introduced
-+ 111
++ **Acl_cache_items_count**：缓存的权限对象数，MySQL 8.0.0 
++ **Audit_log_current_size**：审计日志文件当前大小，MySQL 8.0.11
++ **Audit_log_event_max_drop_size**：删除最大的审计事件的大小，MySQL 8.0.11
++ **Audit_log_events**：已处理审计事件的数量，MySQL 8.0.11
++ **Audit_log_events_filtered**：过滤的审计事件数量，MySQL 8.0.11
++ **Audit_log_events_lost**：删除的审计事件数量，MySQL 8.0.11
++ **Audit_log_events_written**：记录的审计事件数量 ，MySQL 8.0.11
++ **Audit_log_total_size**：记录审计事件的总大小，MySQL 8.0.11
++ **Audit_log_write_waits**：延迟记录的审计事件数量 ，MySQL 8.0.11 
 
 ---
 #### 二、Options and Variables Deprecated

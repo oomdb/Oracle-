@@ -42,4 +42,42 @@
 + **ignore-builtin-innodb**：忽略内置InnoDB，MySQL 8.0.3
 + **ignore-db-dir**：将目录视为非数据库目录，MySQL 8.0.0
 + **ignore_db_dirs**：目录被视为非数据库目录，MySQL 8.0.0 
++ **innodb_checksums**：启用InnoDB checksums校验，MySQL 8.0.0 
++ **innodb_disable_resize_buffer_pool_debug**：禁用InnoDB缓冲池的大小调整，MySQL 8.0.0 
++ **innodb_file_format**： 新InnoDB表的格式，MySQL 8.0.0
++ **innodb_file_format_check**：InnoDB是否执行文件格式兼容性检查，MySQL 8.0.0 
++ **innodb_file_format_max**：共享表空间中的文件格式标记，MySQL 8.0.0
++ **innodb_large_prefix**：为列前缀索引启用更长的键，MySQL 8.0.0 
++ **innodb_locks_unsafe_for_binlog**：强制InnoDB不使用next-key锁定，而仅使用行级锁定，MySQL 8.0.0 
++ **innodb_scan_directories**：定义InnoDB恢复期间扫描表空间文件目录，MySQL 8.0.4 
++ **innodb_stats_sample_pages**：索引分布统计信息采样的索引页数，MySQL 8.0.0 
++ **innodb_support_xa**：启用InnoDB支持XA事务的二阶段提交，MySQL 8.0.0
++ **innodb_undo_logs**：定义InnoDB使用的undo logs (rollback segments)数量，是innodb_rollback_segments 变量的别名，MySQL 8.0.2 
++ **internal_tmp_disk_storage_engine**：内部临时表存储引擎，MySQL 8.0.16 
++ **log-warnings**：记录非关键warnings信息到日志文件，MySQL 8.0.3 
++ **log_builtin_as_identified_by_password**：是否以向后兼容的方式记录CREATE / ALTER USER，GRANT 语句，MySQL 8.0.11 
++ **log_error_filter_rules**：错误日志过滤规则，MySQL 8.0.4 
++ **log_syslog**：是否记录错误日志到syslog中，MySQL 8.0.13 
++ **log_syslog_facility**：syslog 信息工具，MySQL 8.0.13 
++ **log_syslog_include_pid**：是否在syslog信息中报告 server PID，MySQL 8.0.13 
++ **log_syslog_tag**：在syslog信息中记录服务器标识符，MySQL 8.0.13 
++ **max_tmp_tables**：未使用，MySQL 8.0.3
++ **metadata_locks_cache_size**：metadata锁缓冲大小，MySQL 8.0.13 
++ **metadata_locks_hash_instances**：metadata锁hash数量 ，MySQL 8.0.13
++ **multi_range_count**：在范围选择期间一次发送到表处理程序的最大范围数，MySQL 8.0.3 
++ **old_passwords**：为PASSWORD()函数选择密码哈希方法，MySQL 8.0.11 
++ **partition**：分区支持的启用或者禁用，MySQL 8.0.0
++ **query_cache_limit**：缓存结果集的最大限制，MySQL 8.0.3
++ **query_cache_min_res_unit**：分配结果空间的最小单位大小（在写完所有结果数据后将修剪最后一个单位），MySQL 8.0.3 
++ **query_cache_size**：分配用于存储旧查询结果的内存，MySQL 8.0.3 
++ **query_cache_type**：查询缓存（QC）类型，MySQL 8.0.3
++ **query_cache_wlock_invalidate**：在LOCK上查询缓存中的无效查询进行写入，MySQL 8.0.3  
++ **secure-auth**：不允许使用pre-4.1 之前的密码进行账户认证，MySQL 8.0.3 
++ **show_compatibility_56**：兼容 SHOW STATUS/VARIABLES 语句，MySQL 8.0.1
++ **skip-partition**：不启用用户自定义分区，MySQL 8.0.0
++ **sync_frm**：创建时同步.frm文件到磁盘，默认启用，MySQL 8.0.0
++ **temp-pool**：使用此选项将导致创建的大多数临时文件使用一小组名称，而不是每个新文件的唯一名称。，MySQL 8.0.1
++ **time_format**：TIME格式（未使用） ，MySQL 8.0.3 
++ **tx_isolation**： 默认事务隔离级别，MySQL 8.0.3
++ **tx_read_only**：默认事务访问模式，MySQL 8.0.3 
 

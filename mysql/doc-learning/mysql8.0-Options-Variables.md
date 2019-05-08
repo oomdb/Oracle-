@@ -15,6 +15,20 @@
 + **Audit_log_events_written**：记录的审计事件数量 ，MySQL 8.0.11
 + **Audit_log_total_size**：记录审计事件的总大小，MySQL 8.0.11
 + **Audit_log_write_waits**：延迟记录的审计事件数量 ，MySQL 8.0.11 
++ **Caching_sha2_password_rsa_public_key:**： caching_sha2_password认证插件RSA公钥值，MySQL 8.0.4 
++ **Com_alter_resource_group**：统计 ALTER RESOURCE GROUP 语句数量，MySQL 8.0.3
++ **Com_alter_user_default_role**：统计 ALTER USER ... DEFAULT ROLE 语句数量，MySQL 8.0.0
++ **Com_create_resource_group**：统计 CREATE RESOURCE GROUP 语句数量，MySQL 8.0.3
++ **Com_create_role**：统计 CREATE ROLE 语句数量，MySQL 8.0.0
++ **Com_drop_resource_group:**：统计 DROP RESOURCE GROUP 语句数量，MySQL 8.0.3
++ **Com_drop_role**：统计 DROP ROLE 语句数量，MySQL 8.0.0
++ **Com_grant_roles**：统计 GRANT ROLE 语句数量，MySQL 8.0.0
++ **Com_install_component**：统计 INSTALL COMPONENT 语句数量，MySQL 8.0.0
++ **Com_revoke_roles**：统计 REVOKE ROLES 语句数量，MySQL 8.0.0
++ **Com_set_resource_group:**：统计 SET RESOURCE GROUP 语句数量， MySQL 8.0.3
++ **Com_set_role**：统计 SET ROLE 语句数量，MySQL 8.0.0
++ **Com_uninstall_component**：统计 UINSTALL COMPONENT 语句数量，MySQL 8.0.0
++ **Connection_control_delay_generated:**：服务器延迟连接请求的次数，MySQL 8.0.1 
 
 ---
 #### 二、Options and Variables Deprecated

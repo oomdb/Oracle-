@@ -29,6 +29,22 @@
 + **Com_set_role**：统计 SET ROLE 语句数量，MySQL 8.0.0
 + **Com_uninstall_component**：统计 UINSTALL COMPONENT 语句数量，MySQL 8.0.0
 + **Connection_control_delay_generated:**：服务器延迟连接请求的次数，MySQL 8.0.1 
++ **Current_tls_ca**：ssl_ca 系统变量当前值，MySQL 8.0.16
++ **Current_tls_capath**：ssl_capath 系统变量当前值，MySQL 8.0.16
++ **Current_tls_cert**：ssl_cert 系统变量当前值，MySQL 8.0.16
++ **Current_tls_cipher**：ssl_cipher 系统变量当前值，MySQL 8.0.16
++ **Current_tls_ciphersuites**：tsl_ciphersuites 系统变量当前值，MySQL 8.0.16
++ **Current_tls_crl**：ssl_crl 系统变量当前值，MySQL 8.0.16
++ **Current_tls_crlpath**：ssl_crlpath 系统变量当前值，MySQL 8.0.16
++ **Current_tls_key**：ssl_key 系统变量当前值，MySQL 8.0.16
++ **Current_tls_version**：tls_version 系统变量当前值，MySQL 8.0.16
++ **Firewall_access_denied**：MySQL Enterprise Firewall 拒绝的语句数量，MySQL 8.0.11
++ **Firewall_access_granted**：MySQL Enterprise Firewall 接受的语句数量，MySQL 8.0.11
++ **Firewall_cached_entries**：MySQL Enterprise Firewall 记录的语句数量，MySQL 8.0.11
++ **Secondary_engine_execution_count**：未来使用，MySQL 8.0.13
++ **activate_all_roles_on_login**：是否在连接时激活所有用户角色，MySQL 8.0.2
++ **admin_address**：要绑定到管理接口上的连接的IP地址，MySQL 8.0.14
++ **admin_port**：用于管理接口连接的 TCP/IP 端口，MySQL 8.0.14
 
 ---
 #### 二、Options and Variables Deprecated

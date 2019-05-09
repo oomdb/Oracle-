@@ -45,6 +45,23 @@
 + **activate_all_roles_on_login**：是否在连接时激活所有用户角色，MySQL 8.0.2
 + **admin_address**：要绑定到管理接口上的连接的IP地址，MySQL 8.0.14
 + **admin_port**：用于管理接口连接的 TCP/IP 端口，MySQL 8.0.14
++ **audit-log**：是否激活审计日志插件，MySQL 8.0.11
++ **audit_log_buffer_size**：审计日志 buffer 大小，MySQL 8.0.11 
++ **audit_log_compression**：审计日志文件压缩方法，MySQL 8.0.11 
++ **audit_log_connection_policy**：连接相关事件的审计日志策略，MySQL 8.0.11 
++ **audit_log_current_session**：是否审计当前SESSION，MySQL 8.0.11
++ **audit_log_encryption**：审计日志文件加密方法，MySQL 8.0.11
++ **audit_log_exclude_accounts**：不审计账户，MySQL 8.0.11
++ **audit_log_file**：审计日志文件名，MySQL 8.0.11
++ **audit_log_filter_id**：当前审计日志过滤id，MySQL 8.0.11
++ **audit_log_flush**：关闭并重新打开审计日志文件，MySQL 8.0.11
++ **audit_log_format**：审计日志文件格式，MySQL 8.0.11
++ **audit_log_include_accounts**：审计账户，MySQL 8.0.11
++ **audit_log_policy**：审计日志策略，MySQL 8.0.11
++ **audit_log_read_buffer_size**：审计日志文件读缓冲区大小，MySQL 8.0.11
++ **audit_log_rotate_on_size**：在特定大小情况下关闭并重新打开审计日志文件，MySQL 8.0.11
++ **audit_log_statement_policy**：语句级相关事件审计日志策略，MySQL 8.0.11
++ **audit_log_strategy**：审计日志记录策略，MySQL 8.0.11
 
 ---
 #### 二、Options and Variables Deprecated

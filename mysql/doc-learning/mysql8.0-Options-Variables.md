@@ -110,6 +110,31 @@
 + **cte_max_recursion_depth**：CTE最大递归深度，MySQL 8.0.3
 + **ddl-rewriter**：是否激活ddl_rewriter插件，MySQL 8.0.16
 + **default_collation_for_utf8mb4**：utf8mb4字符集的默认校验规则，MySQL 8.0.11
++ **default_table_encryption**：schema和tablespace默认加密设置，MySQL 8.0.16 
++ **dragnet.Status**：dragnet.log_error_filter_rules最新结果，MySQL 8.0.12
++ **dragnet.log_error_filter_rules**：错误日志过滤规则，MySQL 8.0.4
++ **early-plugin-load**：在加载强制内置插件之前和存储引擎初始化之前指定要加载的插件，MySQL 8.0.0
++ **group_replication_autorejoin_tries**：成员自动重新键入组尝试的次数，MySQL 8.0.16
++ **group_replication_communication_debug_options**：组复制组件Debug信息的级别，MySQL 8.0.3
++ **group_replication_communication_max_message_size**：组复制通信的最大消息大小，更大的消息会碎片化，MySQL 8.0.16
++ **group_replication_consistency**：组提供的事务一致性保证类型，MySQL 8.0.14 
++ **group_replication_exit_state_action**：实例在不自觉地离开组时的行为方式，MySQL 8.0.12 
++ **group_replication_flow_control_hold_percent**：定义未使用的组配额的百分比，MySQL 8.0.2 
++ **group_replication_flow_control_max_commit_quota**：定义组的最大流量控制配额，MySQL 8.0.2
++ **group_replication_flow_control_member_quota_percent**：：定义计算配额时成员应该假定的配额百分比，MySQL 8.0.2
++ **group_replication_flow_control_min_quota**：控制可分配给成员的最低流量控制配额，MySQL 8.0.2
++ **group_replication_flow_control_min_recovery_quota**：控制由于组中的另一个恢复成员而可以分配给成员的最低配额，MySQL 8.0.2
++ **group_replication_flow_control_period**：定义流控制迭代之间等待的秒数，MySQL 8.0.2 
++ **group_replication_flow_control_release_percent**：：定义当流控制不再需要限制编写器成员时应如何释放组配额，MySQL 8.0.2
++ **group_replication_member_expel_timeout**：组成员被怀疑失败并被驱逐出组之间的时间，导致组成员身份重新配置，MySQL 8.0.13
++ **group_replication_member_weight**：该成员被选为主要成员 primary 的机会，MySQL 8.0.2.
++ **group_replication_message_cache_size**：组通信引擎（XCom）中的消息缓存的最大内存，MySQL 8.0.16
++ **group_replication_recovery_get_public_key**：是否接受从master获取公钥的首选项，MySQL 8.0.4
++ **group_replication_recovery_public_key_path**：接受公钥信息，MySQL 8.0.4
++ **group_replication_unreachable_majority_timeout**：等待导致少数群体离开群组的网络分区需要多长时间，MySQL 8.0.2
++ **histogram_generation_max_mem_size**：创建直方图统计信息所需最大内存，MySQL 8.0.2
++ **immediate_server_version**：作为复制拓扑中的直接主服务器的服务器的MySQL服务器版本号，MySQL 8.0.14 
++ **information_schema_stats_expiry**：缓存表统计信息的过期设置，MySQL 8.0.3
 
 ---
 #### 二、Options and Variables Deprecated

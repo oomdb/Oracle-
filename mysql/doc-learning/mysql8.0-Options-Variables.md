@@ -62,6 +62,54 @@
 + **audit_log_rotate_on_size**：在特定大小情况下关闭并重新打开审计日志文件，MySQL 8.0.11
 + **audit_log_statement_policy**：语句级相关事件审计日志策略，MySQL 8.0.11
 + **audit_log_strategy**：审计日志记录策略，MySQL 8.0.11
++ **authentication_ldap_sasl_auth_method_name:**：认证方法名，MySQL 8.0.11
++ **authentication_ldap_sasl_bind_base_dn**：LDAP服务基础专有名称，MySQL 8.0.11
++ **authentication_ldap_sasl_bind_root_dn**：LDAP服务根专有名称，MySQL 8.0.11
++ **authentication_ldap_sasl_bind_root_pwd**：LDAP服务根绑定密码，MySQL 8.0.11
++ **authentication_ldap_sasl_ca_path**：LDAP服务证书颁发机构文件名，MySQL 8.0.11
++ **authentication_ldap_sasl_group_search_attr**：LDAP服务组搜索属性，MySQL 8.0.11
++ **authentication_ldap_sasl_group_search_filter**：LDAP自定义组搜索过滤器，MySQL 8.0.11
++ **authentication_ldap_sasl_init_pool_size**：LDAP服务初始化连接池大小，MySQL 8.0.11
++ **authentication_ldap_sasl_log_status**：LDAP服务日志级别，MySQL 8.0.11
++ **authentication_ldap_sasl_max_pool_size**：LDAP服务最大连接池大小，MySQL 8.0.11
++ **authentication_ldap_sasl_server_host**：LDAP服务主机名或者ip地址，MySQL 8.0.11
++ **authentication_ldap_sasl_server_port**：LDAP服务端口号，MySQL 8.0.11
++ **authentication_ldap_sasl_tls**：到LDAP服务是否使用加密连接，MySQL 8.0.11
++ **authentication_ldap_sasl_user_search_attr**：LDAP服务用户搜索属性，MySQL 8.0.11
++ **authentication_ldap_simple_auth_method_name**：认证方法名，MySQL 8.0.11
++ **authentication_ldap_simple_bind_base_dn**：LDAP服务基础专有名称，MySQL 8.0.11
++ **authentication_ldap_simple_bind_root_dn**：LDAP服务根专有名称，MySQL 8.0.11
++ **authentication_ldap_simple_bind_root_pwd**：LDAP服务根绑定地址，MySQL 8.0.11
++ **authentication_ldap_simple_ca_path**：LDAP服务证书颁发机构文件名，MySQL 8.0.11
++ **authentication_ldap_simple_group_search_attr**：LDAP服务组搜索属性，MySQL 8.0.11
++ **authentication_ldap_simple_group_search_filter**：LDAP自定义组搜索过滤，MySQL 8.0.11
++ **authentication_ldap_simple_init_pool_size**：LDAP服务初始化连接池大小，MySQL 8.0.11
++ **authentication_ldap_simple_log_status**：LDAP服务日志级别，MySQL 8.0.11
++ **authentication_ldap_simple_max_pool_size**：LDAP服务最大连接池大小，MySQL 8.0.11
++ **authentication_ldap_simple_server_host**：LDAP服务主机名或者ip地址，MySQL 8.0.11
++ **authentication_ldap_simple_server_port**：LDAP服务端口号，MySQL 8.0.11
++ **authentication_ldap_simple_tls**：到LDAP服务是否使用加密连接，MySQL 8.0.11
++ **authentication_ldap_simple_user_search_attr**：LDAP服务用户搜索属性，MySQL 8.0.11
++ **authentication_windows_log_level**：Windows认证插件日志级别，MySQL 8.0.11
++ **authentication_windows_use_principal_name**：是否使用Windows身份验证插件主体名称，MySQL 8.0.11
++ **binlog_encryption**：对二进制日志文件和relay log日志文件进行加密， MySQL 8.0.14
++ **binlog_expire_logs_seconds**：多少秒后清理二进制日志文件，MySQL 8.0.1
++ **binlog_rotate_encryption_master_key_at_startup**：在服务启动时，轮转加密二进制日志文件master key值，MySQL 8.0.14
++ **binlog_row_event_max_size**：二进制日志文件最大事件大小，MySQL 8.0.14
++ **binlog_row_metadata**：使用RBR时，配置表相关的二进制日志的元数据量，MySQL 8.0.1
++ **binlog_row_value_options**：基于RBR的复制，启用二进制日志文件记录部分JSON更新，MySQL 8.0.3
++ **binlog_transaction_dependency_history_size**：搜索从上次更新以来保留的row hashes事务数，MySQL 8.0.1
++ **binlog_transaction_dependency_tracking**：依赖关系信息的来源（提交时间戳或事务写入集），用于评估Slave的多线程应用程序可以并行执行哪些事务。，MySQL 8.0.1
++ **caching_sha2_password_auto_generate_rsa_keys**：是否自动生成RSA key文件，MySQL 8.0.4
++ **caching_sha2_password_private_key_path**：SHA2认证插件私钥路径名，MySQL 8.0.3
++ **caching_sha2_password_public_key_path**：SHA2认证插件公钥路径名，MySQL 8.0.3
++ **connection_control_failed_connections_threshold**：在延迟发生之前连续失败的连接尝试，MySQL 8.0.1
++ **connection_control_max_connection_delay**：服务器响应失败连接重试的最大延迟（ms），MySQL 8.0.1
++ **connection_control_min_connection_delay**：服务器响应失败连接重试的最小延迟（ms），MySQL 8.0.1
++ **create_admin_listener_thread**：在管理接口是否连接使用专用监听线程，MySQL 8.0.14
++ **cte_max_recursion_depth**：CTE最大递归深度，MySQL 8.0.3
++ **ddl-rewriter**：是否激活ddl_rewriter插件，MySQL 8.0.16
++ **default_collation_for_utf8mb4**：utf8mb4字符集的默认校验规则，MySQL 8.0.11
 
 ---
 #### 二、Options and Variables Deprecated

@@ -135,6 +135,28 @@
 + **histogram_generation_max_mem_size**：创建直方图统计信息所需最大内存，MySQL 8.0.2
 + **immediate_server_version**：作为复制拓扑中的直接主服务器的服务器的MySQL服务器版本号，MySQL 8.0.14 
 + **information_schema_stats_expiry**：缓存表统计信息的过期设置，MySQL 8.0.3
++ **innodb_buffer_pool_debug**：当innodb_buffer_pool_size小于1G时，允许多少个buffer pool实例，MySQL 8.0.0
++ **innodb_buffer_pool_in_core_file**：控制将缓冲池页面写入核心文件 ，MySQL 8.0.14 
++ **innodb_checkpoint_disabled**： 禁用检查点，以便服务器退出时总是启动恢复，MySQL 8.0.2
++ **innodb_ddl_log_crash_reset_debug**： 重置DDL日志崩溃注入计数器的debug选项，MySQL 8.0.3
++ **innodb_deadlock_detect**：启用或者禁用死锁检测，MySQL 8.0.0 
++ **innodb_dedicated_server**：启用自动配置buffer pool大小, 日志文件大小和刷线方法，MySQL 8.0.3 
++ **innodb_directories**：定义服务启动时扫描的表空间数据文件的目录，MySQL 8.0.4
++ **innodb_fsync_threshold**：创建新文件时，控制何时Innodb调用fsync，MySQL 8.0.13
++ **innodb_log_checkpoint_fuzzy_now**：强制Innodb写fuzzy检查点的debug选项，MySQL 8.0.13 
++ **innodb_log_spin_cpu_abs_lwm**：低于用户线程在等待刷新redo不再旋转时的最小CPU使用量，MySQL 8.0.11 
++ **innodb_log_spin_cpu_pct_hwm**：高于用户线程在等待刷新redo不再旋转时的最大CPU使用量，MySQL 8.0.11 
++ **innodb_log_wait_for_flush_spin_hwm**：高于用户线程在等待刷新redo不再旋转时最大平均日志刷新时间 ，MySQL 8.0.11  
++ **innodb_parallel_read_threads**：并行索引读的线程数量，MySQL 8.0.14 
++ **innodb_print_ddl_logs**：是否打印DDL日志到错误日志文件中，MySQL 8.0.3 
++ **innodb_redo_log_encrypt**：控制加密表空间的重做日志数据的加密，MySQL 8.0.1
++ **innodb_scan_directories**：定义在InnoDB恢复期间扫描表空间文件的目录，MySQL 8.0.2
++ **innodb_spin_wait_pause_multiplier**：定义乘数值，用于确定旋转等待循环中的PAUSE指令数，MySQL 8.0.16 
++ **innodb_stats_include_delete_marked**：计算持久的InnoDB统计信息时，包括删除标记的记录 ，MySQL 8.0.1 
++ **innodb_temp_tablespaces_dir**：会话临时表空间路径 ，MySQL 8.0.13
++ **innodb_tmpdir**： 在线 ALTER TABLE 操作，临时表文件创建的目录位置，MySQL 8.0.0 
++ **innodb_undo_log_encrypt**：控制加密表空间的撤消日志数据的加密，MySQL 8.0.1 
++ **internal_tmp_mem_storage_engine**：定义内部内存临时表的存储引擎，MySQL 8.0.2 
 
 ---
 #### 二、Options and Variables Deprecated

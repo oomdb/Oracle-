@@ -157,6 +157,52 @@
 + **innodb_tmpdir**： 在线 ALTER TABLE 操作，临时表文件创建的目录位置，MySQL 8.0.0 
 + **innodb_undo_log_encrypt**：控制加密表空间的撤消日志数据的加密，MySQL 8.0.1 
 + **internal_tmp_mem_storage_engine**：定义内部内存临时表的存储引擎，MySQL 8.0.2 
++ **keyring-migration-destination**：秘钥迁移目标keyring插件 ，MySQL 8.0.4  
++ **keyring-migration-host**：用于连接到运行服务器以进行密钥迁移的主机名，MySQL 8.0.4   
++ **keyring-migration-password**：用于连接到运行服务器以进行密钥迁移的密码，MySQL 8.0.4   
++ **keyring-migration-port**：用于连接到运行服务器以进行密钥迁移的TCP/IP端口号，MySQL 8.0.4 
++ **keyring-migration-socket**：用于连接到运行服务器以进行密钥迁移的Unix的socket文件或者Windows的命名管道，MySQL 8.0.4
++ **keyring-migration-source**：密钥迁移的源端keyring插件，MySQL 8.0.4    
++ **keyring-migration-user**：用于连接到运行服务器以进行密钥迁移的用户名，MySQL 8.0.4  
++ **keyring_aws_cmk_id**：AWS keyring插件 客户主密钥ID值，MySQL 8.0.11  
++ **keyring_aws_conf_file**：AWS keyring插件 配置文件位置，MySQL 8.0.11 
++ **keyring_aws_data_file**：AWS keyring插件 存储文件位置，MySQL 8.0.11 
++ **keyring_aws_region**：AWS keyring插件区域，MySQL 8.0.11 
++ **keyring_encrypted_file_data**：keyring_encrypted_file 插件数据文件 ，MySQL 8.0.11 
++ **keyring_encrypted_file_password**：keyring_encrypted_file 插件密码，MySQL 8.0.11
++ **keyring_okv_conf_dir**：Oracle Key Vault keyring 插件配置目录，MySQL 8.0.11 
++ **keyring_operations**：是否启用keyring操作，MySQL 8.0.4 
++ **lock_order**：是否在运行时启用LOCK_ORDER工具，MySQL 8.0.17 
++ **lock_order_debug_loop**：当LOCK_ORDER工具遇到标记为循环的依赖项时是否导致调试断言，MySQL 8.0.17
++ **lock_order_debug_missing_arc**：当LOCK_ORDER工具遇到未声明的依赖项时是否导致调试断言，MySQL 8.0.17 
++ **lock_order_debug_missing_key**：当LOCK_ORDER工具遇到没有使用性能模式正确检测的对象时是否导致调试断言，MySQL 8.0.17 
++ **lock_order_debug_missing_unlock**当LOCK_ORDER工具遇到仍然保持时被销毁的锁时，是否导致调试断言，MySQL 8.0.17 
++ **lock_order_dependencies**：lock_order_dependencies.txt 文件的路径，MySQL 8.0.17 
++ **lock_order_extra_dependencies**：第二个依赖项文件的路径，MySQL 8.0.17 
++ **lock_order_output_directory**：LOCK_ORDER工具写入日志的目录，MySQL 8.0.17 
++ **lock_order_print_txt**：是否执行锁定顺序图分析和打印文本报告，MySQL 8.0.17 
++ **lock_order_trace_loop**：当LOCK_ORDER工具遇到标记为循环的依赖项时是否打印日志文件跟踪， MySQL 8.0.17 
++ **lock_order_trace_missing_arc**：当LOCK_ORDER工具遇到未声明的依赖项时是否打印日志文件跟踪， MySQL 8.0.17 
++ **lock_order_trace_missing_key**：当LOCK_ORDER工具遇到没有使用性能模式正确检测的对象时是否打印日志文件跟踪， MySQL 8.0.17
++ **lock_order_trace_missing_unlock**：是否在LOCK_ORDER工具遇到仍然保持时销毁的锁时打印日志文件跟踪，MySQL 8.0.17 
++ **log_error_filter_rules**：错误日志过滤规则，MySQL 8.0.2 
++ **log_error_services**：错误日志使用组件，MySQL 8.0.2 
++ **log_error_suppression_list**：错误日志中禁止的 警告/信息，MySQL 8.0.13 
++ **log_slow_extra**：是否写额外的信息到slow log中，MySQL 8.0.14 
++ **mandatory_roles**：自动为所有用户授予的权限，MySQL 8.0.2 
++ **mysql_firewall_mode**：MySQL Enterprise Firewall是否可以运行，MySQL 8.0.11 
++ **mysql_firewall_trace**：是否启用防火墙跟踪，MySQL 8.0.11 
++ **mysqlx**：是否初始化 X 插件，MySQL 8.0.11
++ **mysqlx_interactive_timeout**：等待交互式客户端超时的秒数，MySQL 8.0.4 
++ **mysqlx_read_timeout**：等待阻止读取操作完成的秒数，MySQL 8.0.4
++ **mysqlx_wait_timeout**：等待连接活动的秒数，MySQL 8.0.4 
++ **mysqlx_write_timeout**：等待阻止写入操作完成的秒数，MySQL 8.0.4 
++ **named_pipe_full_access_group**：授予对命名管道的完全访问权限的Windows组的名称，MySQL 8.0.14 
++ **no-dd-upgrade**：防止在启动时自动升级数据字典表，MySQL 8.0.4 
++ **no-monitor**：RESTART需要的监视进程不fork，MySQL 8.0.12 
++ **original_commit_timestamp**：在原始主服务器上提交事务的时间，MySQL 8.0.1
++ **original_server_version**：最初提交事务的服务器的MySQL Server版本号，MySQL 8.0.14
++ **partial_revokes**：是否启用部分撤销，MySQL 8.0.16 
 
 ---
 #### 二、Options and Variables Deprecated

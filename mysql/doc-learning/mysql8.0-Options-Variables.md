@@ -203,6 +203,48 @@
 + **original_commit_timestamp**：在原始主服务器上提交事务的时间，MySQL 8.0.1
 + **original_server_version**：最初提交事务的服务器的MySQL Server版本号，MySQL 8.0.14
 + **partial_revokes**：是否启用部分撤销，MySQL 8.0.16 
++ **password_history**：密码重用前所需的密码更改次数，MySQL 8.0.3 
++ **password_require_current**：密码更改是否需要当前密码验证，MySQL 8.0.13
++ **password_reuse_interval**：密码重用之前所需的天数，MySQL 8.0.3 
++ **performance_schema_max_digest_sample_age**：查询以秒为单位重新采样年龄，MySQL 8.0.3
++ **persist_only_admin_x509_subject**：SSL证书X.509启用持久限制的系统变量的主题，MySQL 8.0.14 
++ **persisted_globals_load**：是否加载持久配置设置，MySQL 8.0.0
++ **print_identified_with_as_hex**：对于SHOW CREATE USER，打印包含十六进制不可打印字符的哈希值，MySQL 8.0.17
++ **regexp_stack_limit**：正则表达式匹配堆栈大小限制，MySQL 8.0.4
++ **regexp_time_limit**：正则表达式匹配超时，MySQL 8.0.4
++ **resultset_metadata**：服务器是否返回结果集元数据，MySQL 8.0.3
++ **rpl_read_size**：设置从二进制日志文件和中继日志文件中读取的最小数据量（以字节为单位），MySQL 8.0.11 
++ **secondary_engine_cost_threshold**：未来使用，MySQL 8.0.16
++ **show_create_table_verbosity**：SHOW CREATE TABLE 是否显示ROW_FORMAT，即使有默认值，MySQL 8.0.11
++ **sql_require_primary_key**：表是否必须有主键，MySQL 8.0.13
++ **ssl_fips_mode**：服务端是否启用FIPS模式，MySQL 8.0.11 
++ **syseventlog.facility**：系统日志消息的工具，MySQL 8.0.13
++ **syseventlog.include_pid**：syslog日志信息中是否包含server PID，MySQL 8.0.13
++ **syseventlog.tag**：在syslog消息中标记服务器标识符，MySQL 8.0.13 
++ **table_encryption_privilege_check**：启用TABLE_ENCRYPTION_ADMIN权限检查，MySQL 8.0.16
++ **temptable_max_ram**：定义数据存储在磁盘上之前TempTable存储引擎可占用的最大内存量，MySQL 8.0.2
++ **temptable_use_mmap**：定义TempTable存储引擎在达到temptable_max_ram阈值时是否分配内存映射文件，MySQL 8.0.16
++ **thread_pool_algorithm**：线程池算法，MySQL 8.0.11
++ **thread_pool_high_priority_connection**：当前会话是否是高优先级，MySQL 8.0.11 
++ **thread_pool_max_unused_threads**：未使用线程的最大允许数量，MySQL 8.0.11
++ **thread_pool_prio_kickup_timer**：将语句移动到高优先级执行之前多长时间，MySQL 8.0.11
++ **thread_pool_size**：线程池中线程组的数量，MySQL 8.0.11
++ **thread_pool_stall_limit**：声明被定义为停滞多久之前，MySQL 8.0.11
++ **tls_ciphersuites**：允许加密连接的TLSv1.3密码套件，MySQL 8.0.16
++ **upgrade**：控制服务启动时自动升级，MySQL 8.0.16
++ **use_secondary_engine**：未来使用，MySQL 8.0.13
++ **validate-config**：验证服务配置，MySQL 8.0.16
++ **validate_password.check_user_name**：是否根据用户名检查密码，MySQL 8.0.4
++ **validate_password.dictionary_file**：validate_password字典文件，MySQL 8.0.4 
++ **validate_password.dictionary_file_last_parsed:**：上次解析字典文件时间，MySQL 8.0.4
++ **validate_password.dictionary_file_words_count**：字典文件中的单词数，MySQL 8.0.4 
++ **validate_password.length**：validate_password需要的密码长度，MySQL 8.0.4
++ **validate_password.mixed_case_count**：validate_password需要的大写/小写字符的数量，MySQL 8.0.4 
++ **validate_password.number_count**：validate_password需要的数字字符数，MySQL 8.0.4 
++ **validate_password.policy**：validate_password密码策略，MySQL 8.0.4
++ **validate_password.special_char_count**：validate_password需要特殊字符的数量，MySQL 8.0.4
++ **version_compile_zlib**：编译的zlib库的版本，MySQL 8.0.11
++ **windowing_use_high_precision**：是否以高精度计算窗口函数，MySQL 8.0.2
 
 ---
 #### 二、Options and Variables Deprecated

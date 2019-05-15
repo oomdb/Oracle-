@@ -8,3 +8,8 @@
 + [MySQL Search](https://www.oracle.com/search/results?cat=mysql)
 + [MySQL Bugs](http://bugs.mysql.com/)
 + [淘宝-数据库内核月报](http://mysql.taobao.org/monthly/)
+
+
+#### 学习笔记
++ []()
++ []()

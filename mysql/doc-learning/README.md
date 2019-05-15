@@ -12,5 +12,9 @@
 
 #### 学习笔记
 
+##### 一、MySQL8.0 新特性
 + [MySQL8.0 Server and Status Variables and Options](https://github.com/oomdb/ora2opendb/blob/master/mysql/doc-learning/mysql8.0-Options-Variables.md)
 + [MySQL8.0 New Features](https://github.com/oomdb/ora2opendb/blob/master/mysql/doc-learning/mysql8.0-new-features.md)
+
+##### 二、MySQL安装升级
++ 111

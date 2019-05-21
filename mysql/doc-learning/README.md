@@ -17,4 +17,4 @@
 + [MySQL8.0 Server and Status Variables and Options](https://github.com/oomdb/ora2opendb/blob/master/mysql/doc-learning/mysql8.0-Options-Variables.md)
 
 ##### 二、MySQL安装升级
-+ 111
++ [MySQL 通用安装指南](https://github.com/oomdb/ora2opendb/blob/master/mysql/doc-learning/mysql_general_install_guide.md)

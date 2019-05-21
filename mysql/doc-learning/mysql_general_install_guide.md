@@ -2,7 +2,7 @@
 --- 
 **1. 平台支持**
 
-支持主流的操作系统平台,如：
+支持主流的操作系统平台，32位或者64位等,如：
 + Unix, Linux, FreeBSD
 + Microsoft Windows
 + OS X 

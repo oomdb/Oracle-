@@ -1,6 +1,7 @@
 ### MySQL 通用安装指南
 --- 
 **1. 平台支持**
+
 支持主流的操作系统平台,如：
 + Unix, Linux, FreeBSD
 + Microsoft Windows

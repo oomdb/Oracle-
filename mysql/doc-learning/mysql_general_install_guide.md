@@ -6,7 +6,7 @@
 + Microsoft Windows
 + OS X 
 
-  详见:[MySQL主流版本支持平台](https://www.mysql.com/support/supportedplatforms/database.html)
+  详见：[MySQL主流版本支持平台](https://www.mysql.com/support/supportedplatforms/database.html)
 
 **2. 选择分发版本**
 

@@ -31,6 +31,15 @@
 
 **3. 下载分发版本**
 
+  下载地址：
+  + [官方地址](https://dev.mysql.com/downloads/)
+  + [官方镜像地址](https://dev.mysql.com/downloads/mirrors/)
+
+  各平台Repo安装方式
+  + **MySQL Yum Repository**：RPM-based Linux platforms.
+  + **MySQL APT Repository**：Debian-based Linux platforms.
+  + **MySQL SLES Repository**：SUSE Linux Enterprise Server (SLES) platforms.
+
 **4. 验证包完整性**
 
 **5. 安装分发版**

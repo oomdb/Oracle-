@@ -14,7 +14,7 @@
 
 20180903_02.md [《Ora2MySQL兼容性分析：数据类型（5）之 大对象（Large Object (LOB)）数据类型》](https://github.com/oomdb/ora2opendb/blob/master/mysql/20180903/20180903_02.md)
 
-20180903_01.md) [《Ora2MySQL兼容性分析：数据类型（4）之 LONG 和 RAW 类型》](https://github.com/oomdb/ora2opendb/blob/master/mysql/20180903/20180903_01.md)
+20180903_01.md [《Ora2MySQL兼容性分析：数据类型（4）之 LONG 和 RAW 类型》](https://github.com/oomdb/ora2opendb/blob/master/mysql/20180903/20180903_01.md)
 
 20180821_01.md [《Ora2MySQL兼容性分析：数据类型（3）之 日期类型》](https://github.com/oomdb/ora2opendb/blob/master/mysql/20180821/20180821_01.md)
 

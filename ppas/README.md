@@ -5,6 +5,7 @@
 
 + **2019年度**
 ---
+20190805_02.md [《Oracle PPAS 兼容性分析 之 BFILE数据类型》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190805/20190805_02.md)
 
 20190805_01.md [《Oracle PPAS 兼容性分析 之 索引组织表（IOT）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190805/20190805_01.md)
 

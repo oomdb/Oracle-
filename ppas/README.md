@@ -6,6 +6,8 @@
 + **2019年度**
 ---
 
+20190909_01.md [《Oracle PPAS 兼容性分析 之 CAST(MULTISET(subquery) AS type_name) 特性》](https://github.com/oomdb/ora2opendb/tree/master/ppas/20190909/20190909_01.md)
+
 20190806_01.md [《Oracle PPAS 兼容性分析 之 外部表（EXTERNAL TABLE）》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190806/20190806_01.md )
 
 20190805_02.md [《Oracle PPAS 兼容性分析 之 BFILE数据类型》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20190805/20190805_02.md)

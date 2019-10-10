@@ -5,6 +5,7 @@
 
 + **2019年度**
 ---
+20191010_01.md [《Oracle PPAS 兼容性分析 之 NULL值》](https://github.com/oomdb/ora2opendb/blob/master/ppas/20191010/20191010_01.md)
 
 20190909_01.md [《Oracle PPAS 兼容性分析 之 CAST(MULTISET(subquery) AS type_name) 特性》](https://github.com/oomdb/ora2opendb/tree/master/ppas/20190909/20190909_01.md)
 

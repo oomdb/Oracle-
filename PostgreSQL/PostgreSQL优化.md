@@ -15,3 +15,6 @@ SQL语言可以转化为关系代数表达式,关系代数本身又有一些等�
 嵌套循环连接、哈希连接、归并连接这些就是物理操作符。
 
 
+PostgreSQL 查询执行的基本流程：
+
+![pg_optimizer](https://images.gitbook.cn/7740d080-cdf8-11e8-9819-c5f6b437e972)

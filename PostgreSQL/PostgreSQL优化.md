@@ -159,7 +159,7 @@ rows：执行这一步骤会产生的元组数量，这是一个估计值。
 width：产生出的元组的平均字节数（PG_TYPE.typlen中类型的长度）
 
 物化：enable_material，如果返回数据量小，内存可以存放，建议物化。
-
+```
 EXPLAIN 语法说明：
 
 EXPLAIN [ ( _option_ [, ...] ) ] _statement_
@@ -171,7 +171,7 @@ COSTS [ _boolean_ ]
 BUFFERS [ _boolean_ ]：和ANALYZE同时使用，打印缓冲区的命中率。
 TIMING [ _boolean_ ]：和ANALYZE同时使用。
 FORMAT { TEXT | XML | JSON | YAML } 
-
+```
 
 二、调整执行计划：扫描路径 + 连接路径 
 GUC参数：SET GUC_NAME = ON/OFF;
@@ -199,16 +199,16 @@ postgres=# select name,setting,short_desc from pg_settings where name like 'enab
  enable_tidscan                 | on      | Enables the planner's use of TID scan plans.
 ```
 聚集与分组的执行计划调整：
-	1. 哈希聚集（Hash Cluster) HashAggregate, 参数 enable_hashagg
-	2. 顺序聚集（Sort Cluster) GroupAggregate, 无参数
++ 哈希聚集（Hash Cluster) HashAggregate, 参数 enable_hashagg
++ 顺序聚集（Sort Cluster) GroupAggregate, 无参数
 
 并行执行计划：表级PARALLEL_WORKERS参数：CREATE TABLE TEST_A(a INT) WITH (PARALLEL_WORKERS=100);
-min_parallel_table_scan_size：启用并行表扫描的最小页面数， 也就是说表扫描的页面数小于 min_parallel_table_scan_size， 不会启用并行扫描
-min_parallel_index_scan_size：启用并行索引扫描的最小页面数， 也就是说索引扫描的页面数小于 min_parallel_index_scan_size， 不会启用并行扫描
-max_parallel_workers_per_gather：每个 gather 下的最大并行度， 在同一个执行计划里， gather 路径是并行的最上层子路径， 它用来对并行的后台线程的执行结果进行合并， 一个执行计划里可能有多个 gather 路径
++ min_parallel_table_scan_size：启用并行表扫描的最小页面数， 也就是说表扫描的页面数小于 min_parallel_table_scan_size， 不会启用并行扫描
++ min_parallel_index_scan_size：启用并行索引扫描的最小页面数， 也就是说索引扫描的页面数小于 min_parallel_index_scan_size， 不会启用并行扫描
++ max_parallel_workers_per_gather：每个 gather 下的最大并行度， 在同一个执行计划里， gather 路径是并行的最上层子路径， 它用来对并行的后台线程的执行结果进行合并， 一个执行计划里可能有多个 gather 路径
 
 如果：heap_pages < min_parallel_table_scan_size 或者 index_pages < min_parallel_index_scan_size ，就不启用并行查询。
 
-max_parallel_workers：用来控制在同一时间最多有多少并行的进程。
++ max_parallel_workers：用来控制在同一时间最多有多少并行的进程。
 
-force_parallel_mode：强制增加一个 gather 结点
++ force_parallel_mode：强制增加一个 gather 结点

@@ -175,6 +175,7 @@ FORMAT { TEXT | XML | JSON | YAML }
 
 二、调整执行计划：扫描路径 + 连接路径 
 GUC参数：SET GUC_NAME = ON/OFF;
+```
 postgres=# select name,setting,short_desc from pg_settings where name like 'enable_%';   
               name              | setting |                       short_desc                       
 --------------------------------+---------+--------------------------------------------------------
@@ -196,7 +197,7 @@ postgres=# select name,setting,short_desc from pg_settings where name like 'enab
  enable_seqscan                 | on      | Enables the planner's use of sequential-scan plans.
  enable_sort                    | on      | Enables the planner's use of explicit sort steps.
  enable_tidscan                 | on      | Enables the planner's use of TID scan plans.
-
+```
 聚集与分组的执行计划调整：
 	1. 哈希聚集（Hash Cluster) HashAggregate, 参数 enable_hashagg
 	2. 顺序聚集（Sort Cluster) GroupAggregate, 无参数
